@@ -8,19 +8,25 @@ body {
 	width: 100%; /* Full width */
 	background: rgb(0,105,62); /* Dartmouth green background */
 	color: #ffffff;
+  height: 100px;
 }
 
 h1 {
 	margin:0px;
 }
-h2 { 
+h2 {
    margin:0px;
+   font-family: 'Crafty Girls'
 }
 
 .container {
-    position: relative; 
+    position: relative;
      width: 100%; /* Full width */
     margin: 0 auto; /* Center it */
+}
+
+.container img{
+  margin-left: 80px;
 }
 
 .container .caption {
@@ -29,7 +35,7 @@ h2 {
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
+    width: 92%; /* Full width */
     padding: 50px; /* Some padding */
 }
 
@@ -37,20 +43,26 @@ nav {
   width: 100%;
   font-family: 'Cinzel';
   margin:0;
-  padding: 0px 60px 100px 50px;
+  padding: 0px 60px 0px 50px;
 
 }
 
 nav a {
-  
+
   color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: white;
 }
 
 
 nav ul {
   border: 2px solid #555;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #d3d3d3;
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
@@ -63,4 +75,5 @@ nav ul {
   right: 0;
   position: absolute;
   z-index:400000;
+  font-family: "Duru Sans";
 }
