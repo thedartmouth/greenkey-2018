@@ -58,7 +58,7 @@ function articlesCycle() {
 
   articles.append('<li>'+firstItem+'</li>');
   firstItem = '';
-  articles.find('li.first').animate({ marginTop: "-500px" }, 1000, function(){  $(this).remove(); articles.find('li:first').addClass("first"); });
+  articles.find('li.first').animate({ marginTop: "-700px" }, 1000, function(){  $(this).remove(); articles.find('li:first').addClass("first"); });
 }
 
 var articlesInit = setInterval("articlesCycle()",intervalSec);
