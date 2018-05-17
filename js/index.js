@@ -3,7 +3,7 @@ var x = 0,
     items = titles.find('li'),
     containerHeight = 0,
     numberVisible = 5,
-    intervalSec = 2000;
+    intervalSec = 5000;
 
 if(!titles.find('li:first').hasClass("first")){
   titles.find('li:first').addClass("first");
@@ -23,7 +23,7 @@ function vertCycle() {
 
   titles.append('<li>'+firstItem+'</li>');
   firstItem = '';
-  titles.find('li.first').animate({ marginTop: "-50px" }, 600, function(){  $(this).remove(); titles.find('li:first').addClass("first"); });
+  titles.find('li.first').animate({ marginTop: "-50px" }, 1000, function(){  $(this).remove(); titles.find('li:first').addClass("first"); });
 }
 
 if(intervalSec < 700){
@@ -58,7 +58,7 @@ function articlesCycle() {
 
   articles.append('<li>'+firstItem+'</li>');
   firstItem = '';
-  articles.find('li.first').animate({ marginTop: "-50px" }, 600, function(){  $(this).remove(); articles.find('li:first').addClass("first"); });
+  articles.find('li.first').animate({ marginTop: "-500px" }, 1000, function(){  $(this).remove(); articles.find('li:first').addClass("first"); });
 }
 
 var articlesInit = setInterval("articlesCycle()",intervalSec);
