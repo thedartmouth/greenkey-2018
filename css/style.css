@@ -86,19 +86,8 @@ nav a:hover {
   justify-content: center;
 }
 
-.tagline {
-  margin: 10px 0 0;
-  text-align: center;
-}
-
-.tagline,
-.tagline a {
-  color: #aaa;
-  text-decoration: none;
-}
-
 ul.titles {
-  width: 15em;
+  width: 18em;
   padding: 0;
   border: 10px solid #fff;
   box-shadow: 0px 2px 3px #eaeaea;
@@ -114,11 +103,20 @@ ul.titles li {
   margin: 0;
   transition: background-color 0.5s;
   font-size: 15px;
+  height: 2.5em;
 }
 
 ul.titles li:nth-child(2) {
   color: #fff;
   background: #1998c4;
+}
+
+ul.titles li:nth-child(2) a {
+  color: #fff;
+}
+
+.titles a {
+  color: #777774;
 }
 
 ul.articles {
@@ -137,6 +135,11 @@ ul.articles li {
   margin: 0;
   transition: background-color 0.5s;
   height: 700px;
+}
+
+.articles a {
+  color: #777774;
+  font-size: 15px;
 }
 
 .articles img {

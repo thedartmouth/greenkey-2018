@@ -3,7 +3,7 @@ if ($(window).width() > 480) {
       titles = $('.titles'),
       items = titles.find('li'),
       containerHeight = 0,
-      numberVisible = 5,
+      numberVisible = 12,
       intervalSec = 5000;
 
   if(!titles.find('li:first').hasClass("first")){
@@ -24,7 +24,7 @@ if ($(window).width() > 480) {
 
     titles.append('<li>'+firstItem+'</li>');
     firstItem = '';
-    titles.find('li.first').animate({ marginTop: "-50px" }, 1000, function(){  $(this).remove(); titles.find('li:first').addClass("first"); });
+    titles.find('li.first').animate({ marginTop: "-65px" }, 1000, function(){  $(this).remove(); titles.find('li:first').addClass("first"); });
   }
 
   if(intervalSec < 700){
