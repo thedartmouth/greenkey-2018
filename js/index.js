@@ -1,3 +1,5 @@
+console.log($(window).width());
+
 if ($(window).width() > 480) {
   var x = 0,
       titles = $('.titles'),
